@@ -35,7 +35,7 @@ exports.createLead = async (req, res) => {
 // Controller to get all leads
 exports.getLeads = async (req, res) => {
     try {
-        const leads = await Lead.find().sort({ createdAt: -1 }); // Get newest leads first
+        const leads = await Lead.find().sort({ createdAt: -1 }); 
         res.status(200).json(leads);
     } catch (error) {
         console.error('Error fetching leads:', error);
