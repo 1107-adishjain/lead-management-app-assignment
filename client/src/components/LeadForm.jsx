@@ -53,7 +53,7 @@ const LeadForm = ({ onLeadAdded, apiUrl }) => {
             setEmail('');
             setPhone('');
             setErrors({});
-            onLeadAdded(); // Refresh the list
+            onLeadAdded(); 
         } catch (error) {
             setSubmitMessage({ type: 'error', text: error.message || 'Failed to add lead.' });
         } finally {
